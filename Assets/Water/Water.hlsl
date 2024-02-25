@@ -26,40 +26,25 @@ half3 SampleSceneColor(half2 uv)
 
 half4 _CameraOpaqueTexture_TexelSize;
 
-void WaterVert_half(half3 ObjectPosition, half3 ObjectNormal, half3 ObjectTangent, half3 ObjectBitangent, half2 UV, out half3 VertexPosition, out half3 VertexNormal, out half3 VertexTangent)
+void WaterVert_half(half3 ObjectPosition, half3 ObjectNormal, half3 ObjectTangent, half3 ObjectBitangent, half2 UV0, half2 UV1, out half3 VertexPosition, out half3 VertexNormal, out half3 VertexTangent)
 {
-	
+	half4 packedNormal = _NormalTex.SampleLevel(sampler_NormalTex, UV0, _DisplacementLOD);
+	packedNormal += _NormalTex.SampleLevel(sampler_NormalTex, UV1, _DisplacementLOD);
+	half3 normal = UnpackNormal(packedNormal / 2.0);
+	half height = 1.0 - sqrt(1.0 - dot(normal.xy, normal.xy));
+
+	VertexPosition = ObjectPosition + _Displacement * height * ObjectNormal;
 	VertexNormal = ObjectNormal;
 	VertexTangent = ObjectTangent;
-	half2 uv0 = UV + _FlowSpeed * _Time.x;
-	half2 uv1 = UV + half2(_FlowSpeed.y, -_FlowSpeed.x) * _Time.x;
-	uv0 = TRANSFORM_TEX(uv0, _NormalTex);
-	uv1 = TRANSFORM_TEX(uv1, _NormalTex);
-	half3 normal = UnpackNormalScale(_NormalTex.SampleLevel(sampler_NormalTex, uv0, _DisplacementLOD), _Distortion);
-	normal += UnpackNormalScale(_NormalTex.SampleLevel(sampler_NormalTex, uv1, _DisplacementLOD), _Distortion);
-#ifdef SHADER_API_MOBILE
-	normal.z = 1.0 + normal.z * 0.5;
-#else
-	normal.z = 1.0 - normal.z * 0.5;
-#endif
-	VertexPosition = ObjectPosition + _Displacement * normal.z * ObjectNormal;
 }
 
-void WaterSurf_half(half3 ViewVector, half3 ViewNormal, half3 ViewTangent, half3 ViewBitangent, half4 ScreenPosition, half2 UV, half3 GrabTexel, half Depth, out half3 Albedo, out half Smoothness, out half3 Emission, out half3 TangentNormal, out half3 TangentWorld)
+void WaterSurf_half(half3 ViewVector, half3 ViewNormal, half3 ViewTangent, half3 ViewBitangent, half4 ScreenPosition, half2 uv0, half2 uv1, half2 foamUV, half3 GrabTexel, half Depth, out half3 Albedo, out half Smoothness, out half3 Emission, out half3 TangentNormal, out half3 TangentWorld)
 {
-	half2 uv0 = UV + _FlowSpeed * _Time.x;
-	half2 uv1 = UV + half2(_FlowSpeed.y, -_FlowSpeed.x) * _Time.x;
-	uv0 = TRANSFORM_TEX(uv0, _NormalTex);
-	uv1 = TRANSFORM_TEX(uv1, _NormalTex);
-	half3 normal = UnpackNormalScale(_NormalTex.Sample(sampler_NormalTex, uv0), _Distortion);
-	normal += UnpackNormalScale(_NormalTex.Sample(sampler_NormalTex, uv1), _Distortion);
-#ifdef SHADER_API_MOBILE
-	normal.z *= -0.5;
-#else
-	normal.z *= 0.5;
-#endif
+	half4 packedNormal = _NormalTex.Sample(sampler_NormalTex, uv0);
+	packedNormal += _NormalTex.Sample(sampler_NormalTex, uv1);
+	half3 normal = UnpackNormalScale(packedNormal / 2.0, _Distortion);
+	normal.z = sqrt(1.0 - dot(normal.xy, normal.xy));
 	TangentNormal = normal;
-	//normal.z = 0;
 
 	half3x3 tangentToView = half3x3(ViewTangent, ViewBitangent, ViewNormal);
 	half3 viewNormal = normalize(mul(normal, tangentToView));
@@ -91,29 +76,21 @@ void WaterSurf_half(half3 ViewVector, half3 ViewNormal, half3 ViewTangent, half3
 
 	if(UseFoam)
 	{
-		//half2 foamUV0 = TRANSFORM_TEX(uv0, _FoamTex);
-		//half2 foamUV1 = TRANSFORM_TEX(uv1, _FoamTex);
-		//half foam = _FoamTex.Sample(sampler_FoamTex, foamUV0).r;
-		//foam *= _FoamTex.Sample(sampler_FoamTex, foamUV1).r;
 		half foam = 1.0 - normal.z;
 
 		half width = 0.4;
 		half sharpness = 2.0;
-		half sharewaweDistortion = 0.04;
-		half2 waveUV0 = UV + sharewaweDistortion * TangentNormal.xy;
-		waveUV0 = TRANSFORM_TEX(waveUV0, _FoamTex);
-		half wave = _FoamTex.Sample(sampler_FoamTex, waveUV0);
+		half sharewaweDistortion = 0.3;
+		foamUV = foamUV + sharewaweDistortion * TangentNormal.xy;
+		half wave = _FoamTex.Sample(sampler_FoamTex, foamUV);
 		half layer = _ShorelineWidth * dot(ViewNormal, viewPos - ViewVector);
 		half shoreline = saturate(1 - layer);
 		half t = shoreline - _Time.y * _Shoreline_Wave_Speed;
 		t = saturate((abs(frac(t) - 0.5) - 0.5 + 0.5 * width) * sharpness + width);
 		foam = saturate(t * shoreline - wave + foam * _Foam + _FoamOffset);
 		
-		Albedo = lerp(color, 1, foam);
-		//Albedo = saturate(normal.z * _Foam + _FoamOffset);
-		//Smoothness = 0;
+		Albedo = lerp(color, 1.0, foam);
 		Smoothness = exp2(-foam * 5.0);
-		//TangentNormal = half3(0, 0, 1);
 	}
 	else
 	{
