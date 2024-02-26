@@ -15,18 +15,18 @@ MonoBehaviour:
   splitRunAndWalk: 1
   stepSound: {fileID: 0}
   stepVFX: {fileID: 3460942344522068592, guid: 902e63e1177458948a48e5edf09e7a33, type: 3}
-  walkStepSound: {fileID: 0}
+  walkStepSound: {fileID: 11400000, guid: 6c29f1a16cccef54abbc0cb9295424e1, type: 2}
   walkStepVFX: {fileID: 3460942344522068592, guid: 902e63e1177458948a48e5edf09e7a33,
     type: 3}
-  runStepSound: {fileID: 0}
+  runStepSound: {fileID: 11400000, guid: b09184f106c77e44580c7109f973feaa, type: 2}
   runStepVFX: {fileID: 3460942344522068592, guid: 2556c489a2af9cf47ac38188ca38bc6b,
     type: 3}
   jumpSound: {fileID: 0}
-  jumpVFX: {fileID: 3460942344522068592, guid: 902e63e1177458948a48e5edf09e7a33, type: 3}
+  jumpVFX: {fileID: 3460942344522068592, guid: 2556c489a2af9cf47ac38188ca38bc6b, type: 3}
   landSound: {fileID: 0}
-  landVFX: {fileID: 0}
+  landVFX: {fileID: 3460942344522068592, guid: 2556c489a2af9cf47ac38188ca38bc6b, type: 3}
   stopSound: {fileID: 0}
-  stopVFX: {fileID: 0}
+  stopVFX: {fileID: 3460942344522068592, guid: 902e63e1177458948a48e5edf09e7a33, type: 3}
   takeoffSound: {fileID: 0}
   takeoffVFX: {fileID: 0}
   usePhysicsMaterial: 1
