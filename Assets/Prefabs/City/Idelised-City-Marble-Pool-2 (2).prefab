@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7183193166395004290}
   - component: {fileID: 341808050994060051}
   - component: {fileID: 1823203019665229586}
+  - component: {fileID: 1076613856653168315}
   m_Layer: 0
   m_Name: Idelised-City-Marble-Pool-2 (2)
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1076613856653168315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6180994006415961003}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.058062162, y: 0.028153151, z: 0.006062803}
+  m_Center: {x: 0.0044350163, y: 6.608687e-10, z: 7.033052e-10}

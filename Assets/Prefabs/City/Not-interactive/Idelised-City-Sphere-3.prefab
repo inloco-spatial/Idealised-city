@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8224326686929848618}
   - component: {fileID: 4856916896104933396}
   - component: {fileID: 833305760760533277}
+  - component: {fileID: 2803150651300825238}
   m_Layer: 0
   m_Name: Idelised-City-Sphere-3
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2803150651300825238
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7957508499079231248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6425110833861440498, guid: 68dc09ca9b1bbc54f8d221ce1da3dc0a, type: 3}

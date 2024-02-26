@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6411943814682081874}
   - component: {fileID: 5434896053831984240}
+  - component: {fileID: 2318394355013540811}
   m_Layer: 0
   m_Name: Idelised-City-Palm-0
   m_TagString: Untagged
@@ -88,3 +89,16 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00042207958, y: -0.0000000013969839, z: 0.021349238}
     m_Extent: {x: 0.014660666, y: 0.013737751, z: 0.021349238}
   m_DirtyAABB: 0
+--- !u!65 &2318394355013540811
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399901187084521259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.026, y: 0.027475497, z: -0.005}
+  m_Center: {x: 0.001, y: 0, z: 0.04}
