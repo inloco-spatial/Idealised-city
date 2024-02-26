@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6979025680295529951}
   - component: {fileID: 887616836850626816}
+  - component: {fileID: 8219465874719888507}
   m_Layer: 0
   m_Name: Idelised-City-House-2
   m_TagString: Untagged
@@ -88,6 +89,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00045468798, y: -0.0010997937, z: 0.0055940715}
     m_Extent: {x: 0.011490922, y: 0.008918645, z: 0.0055940715}
   m_DirtyAABB: 0
+--- !u!65 &8219465874719888507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3107211809602871468}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.012, z: 0.011188146}
+  m_Center: {x: 0, y: 0, z: 0.0055940803}
 --- !u!1 &3244542449417905035
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,6 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2467437413988427043}
   - component: {fileID: 6634783700486478051}
+  - component: {fileID: 3006659253724048182}
   m_Layer: 0
   m_Name: Idelised-City-House-6
   m_TagString: Untagged
@@ -176,6 +191,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00060787564, y: 0.0009084465, z: 0.012627125}
     m_Extent: {x: 0.011975879, y: 0.012226786, z: 0.012627125}
   m_DirtyAABB: 0
+--- !u!65 &3006659253724048182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3244542449417905035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: -0.01, z: 0.02525426}
+  m_Center: {x: 0, y: 0, z: 0.012627129}
 --- !u!1 &4184335616622667643
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5020914255469329073}
   - component: {fileID: 7936650520532675466}
+  - component: {fileID: 6156229482881549053}
   m_Layer: 0
   m_Name: Idelised-City-House-6 (1)
   m_TagString: Untagged
@@ -352,6 +381,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00060787564, y: 0.0009084465, z: 0.012627125}
     m_Extent: {x: 0.011975879, y: 0.012226786, z: 0.012627125}
   m_DirtyAABB: 0
+--- !u!65 &6156229482881549053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5961932873588349868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: -0.01, z: 0.02525426}
+  m_Center: {x: 0, y: 0, z: 0.012627129}
 --- !u!1 &7300814120218423976
 GameObject:
   m_ObjectHideFlags: 0

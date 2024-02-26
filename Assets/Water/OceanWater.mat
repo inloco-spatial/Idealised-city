@@ -122,12 +122,12 @@ Material:
     - _Shoreline_Wave_Speed: 0.18
     - _Smoothness: 1
     - _Strenght: 0
-    - _WaterDepth: 5.76
+    - _WaterDepth: 3.16
     m_Colors:
     - Color_36218622185947c6a5ae36366d8e21d8: {r: 1, g: 1, b: 1, a: 1}
     - Color_93e06cd551a5449091bcde90b46765a0: {r: 1, g: 1, b: 1, a: 1}
     - Vector2_4351ac2be1d74054986ec5378db9d578: {r: 50, g: 50, b: 0, a: 0}
-    - _DeepColor: {r: 0.06908109, g: 0.113216184, b: 0.213, a: 1}
+    - _DeepColor: {r: 0.12300002, g: 0.19816676, b: 0.36900002, a: 1}
     - _FlowSpeed: {r: 0.005, g: 0.00045, b: 0, a: 0}
     - _ShallowColor: {r: 0.14582977, g: 0.447, b: 0.14582977, a: 1}
   m_BuildTextureStacks: []
