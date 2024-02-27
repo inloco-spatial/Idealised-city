@@ -1,43 +1,43 @@
 {
-"Date": "2/27/2024 11:10:45 AM",
+"Date": "2/27/2024 11:13:21 AM",
 "UnityVersion": "2021.3.21f1",
 "com.unity.scriptablebuildpipeline": "1.21.1",
 "traceEvents": [
-{"name": "AssetDatabase.SaveAssets", "ph": "X", "dur": 830.5, "tid": 1, "ts": 91, "pid": 1}
-,{"name": "SwitchToBuildPlatform", "ph": "X", "dur": 14.9000000000001, "tid": 1, "ts": 1832, "pid": 1}
-,{"name": "RebuildSpriteAtlasCache", "ph": "X", "dur": 1.1000000000001, "tid": 1, "ts": 1862, "pid": 1}
-,{"name": "BuildPlayerScripts", "ph": "X", "dur": 1243002.3, "tid": 1, "ts": 1878, "pid": 1}
-,{"name": "PostScriptsCallback", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 1244979, "pid": 1}
-,{"name": "CalculateSceneDependencyData", "ph": "X", "dur": 591359.8, "tid": 1, "ts": 1245011, "pid": 1}
-,{"name": "Calculate Scene Dependencies", "ph": "X", "dur": 591355.9, "tid": 1, "ts": 1245013, "pid": 1, "args": {"0":"bc4c84d966a7a4647b1c5a3048519b3b"}}
-,{"name": "CalculateCustomDependencyData", "ph": "X", "dur": 3.20000000010623, "tid": 1, "ts": 1836480, "pid": 1}
-,{"name": "CalculateAssetDependencyData", "ph": "X", "dur": 4.69999999995707, "tid": 1, "ts": 1836531, "pid": 1}
-,{"name": "Gathering Cache Entries to Load", "ph": "X", "dur": 1.40000000010332, "tid": 1, "ts": 1836534, "pid": 1}
-,{"name": "Gathering Cache Entries to Save", "ph": "X", "dur": 0.199999999949796, "tid": 1, "ts": 1836535, "pid": 1}
-,{"name": "StripUnusedSpriteSources", "ph": "X", "dur": 0.800000000026557, "tid": 1, "ts": 1836560, "pid": 1}
-,{"name": "PostDependencyCallback", "ph": "X", "dur": 0.0999999999748979, "tid": 1, "ts": 1836575, "pid": 1}
-,{"name": "GenerateBundlePacking", "ph": "X", "dur": 225.699999999961, "tid": 1, "ts": 1836593, "pid": 1}
-,{"name": "GenerateBundleCommands", "ph": "X", "dur": 19888.2000000001, "tid": 1, "ts": 1836856, "pid": 1}
-,{"name": "GenerateSubAssetPathMaps", "ph": "X", "dur": 0.800000000026557, "tid": 1, "ts": 1856814, "pid": 1}
-,{"name": "GenerateBundleMaps", "ph": "X", "dur": 176.000000000158, "tid": 1, "ts": 1856829, "pid": 1}
-,{"name": "Temporary Map Creations", "ph": "X", "dur": 76.9000000000233, "tid": 1, "ts": 1856830, "pid": 1}
-,{"name": "Populate BuildReferenceMaps", "ph": "X", "dur": 1.39999999987594, "tid": 1, "ts": 1856907, "pid": 1}
-,{"name": "Populate BuildUsageTagSet", "ph": "X", "dur": 96.9000000000051, "tid": 1, "ts": 1856908, "pid": 1}
-,{"name": "PostPackingCallback", "ph": "X", "dur": 0.20000000017717, "tid": 1, "ts": 1857034, "pid": 1}
-,{"name": "WriteSerializedFiles", "ph": "X", "dur": 959612.9, "tid": 1, "ts": 1857065, "pid": 1}
-,{"name": "RunCachedOperation", "ph": "X", "dur": 959607.2, "tid": 1, "ts": 1857070, "pid": 1, "args": {"0":"Total Entries: 1, Processed: 1, Cached: 0"}}
-,{"name": "Process Entries", "ph": "X", "dur": 959594.5, "tid": 1, "ts": 1857071, "pid": 1}
-,{"name": "Writing SceneBundleWriteOperation", "ph": "X", "dur": 928316.7, "tid": 1, "ts": 1857129, "pid": 1, "args": {"0":"CAB-2c166c34c6df9556db7458f176b8b56c.sharedAssets"}}
-,{"name": "Process Cached Entries", "ph": "X", "dur": 1.49999999985084, "tid": 1, "ts": 2816666, "pid": 1}
-,{"name": "ArchiveAndCompressBundles", "ph": "X", "dur": 859011.9, "tid": 1, "ts": 2816795, "pid": 1}
-,{"name": "CreateWorkItems", "ph": "X", "dur": 10.8000000000175, "tid": 1, "ts": 2816799, "pid": 1}
-,{"name": "CopyingCachedFiles", "ph": "X", "dur": 0.300000000152068, "tid": 1, "ts": 2816810, "pid": 1}
-,{"name": "ArchiveItems", "ph": "X", "dur": 858915.9, "tid": 1, "ts": 2816811, "pid": 1, "args": {"0":"Archiving 1 Bundles"}}
-,{"name": "ArchiveSingleItem", "ph": "X", "dur": 858666.3, "tid": 532, "ts": 2816828, "pid": 1, "args": {"0":"ideealised-city_0"}}
-,{"name": "Copying From Cache", "ph": "X", "dur": 6152.60000000001, "tid": 532, "ts": 3669340, "pid": 1, "args": {"0":"C:\\Users\\kobya\\Documents\\GitHub\\Idealised city\\Idealised-city\\Temp\\ContentBuildData\\ideealised-city_0 -> C:\\Users\\kobya\\Documents\\GitHub\\Idealised city\\Idealised-city\\Exports\\WebGL\\ideealised-city_0"}}
-,{"name": "PostArchiveProcessing", "ph": "X", "dur": 61.500000000251, "tid": 1, "ts": 3675742, "pid": 1}
-,{"name": "AppendBundleHash", "ph": "X", "dur": 0.700000000051659, "tid": 1, "ts": 3675880, "pid": 1}
-,{"name": "GenerateLinkXml", "ph": "X", "dur": 0.200000000404543, "tid": 1, "ts": 3675896, "pid": 1}
-,{"name": "PostWritingCallback", "ph": "X", "dur": 0.100000000202272, "tid": 1, "ts": 3675916, "pid": 1}
+{"name": "AssetDatabase.SaveAssets", "ph": "X", "dur": 786.6, "tid": 1, "ts": 108, "pid": 1}
+,{"name": "SwitchToBuildPlatform", "ph": "X", "dur": 11.6000000000001, "tid": 1, "ts": 1735, "pid": 1}
+,{"name": "RebuildSpriteAtlasCache", "ph": "X", "dur": 1.00000000000011, "tid": 1, "ts": 1764, "pid": 1}
+,{"name": "BuildPlayerScripts", "ph": "X", "dur": 1253167.7, "tid": 1, "ts": 1776, "pid": 1}
+,{"name": "PostScriptsCallback", "ph": "X", "dur": 2.0999999999276, "tid": 1, "ts": 1255051, "pid": 1}
+,{"name": "CalculateSceneDependencyData", "ph": "X", "dur": 575507.3, "tid": 1, "ts": 1255090, "pid": 1}
+,{"name": "Calculate Scene Dependencies", "ph": "X", "dur": 575501.8, "tid": 1, "ts": 1255093, "pid": 1, "args": {"0":"bc4c84d966a7a4647b1c5a3048519b3b"}}
+,{"name": "CalculateCustomDependencyData", "ph": "X", "dur": 2.79999999997926, "tid": 1, "ts": 1830718, "pid": 1}
+,{"name": "CalculateAssetDependencyData", "ph": "X", "dur": 4.69999999995707, "tid": 1, "ts": 1830765, "pid": 1}
+,{"name": "Gathering Cache Entries to Load", "ph": "X", "dur": 0.800000000026557, "tid": 1, "ts": 1830768, "pid": 1}
+,{"name": "Gathering Cache Entries to Save", "ph": "X", "dur": 0.400000000126965, "tid": 1, "ts": 1830770, "pid": 1}
+,{"name": "StripUnusedSpriteSources", "ph": "X", "dur": 1.10000000017862, "tid": 1, "ts": 1830797, "pid": 1}
+,{"name": "PostDependencyCallback", "ph": "X", "dur": 0.199999999949796, "tid": 1, "ts": 1830813, "pid": 1}
+,{"name": "GenerateBundlePacking", "ph": "X", "dur": 236.400000000003, "tid": 1, "ts": 1830845, "pid": 1}
+,{"name": "GenerateBundleCommands", "ph": "X", "dur": 19982.3000000001, "tid": 1, "ts": 1831136, "pid": 1}
+,{"name": "GenerateSubAssetPathMaps", "ph": "X", "dur": 0.999999999976353, "tid": 1, "ts": 1851190, "pid": 1}
+,{"name": "GenerateBundleMaps", "ph": "X", "dur": 292.400000000043, "tid": 1, "ts": 1851207, "pid": 1}
+,{"name": "Temporary Map Creations", "ph": "X", "dur": 167.099999999891, "tid": 1, "ts": 1851207, "pid": 1}
+,{"name": "Populate BuildReferenceMaps", "ph": "X", "dur": 4.40000000003238, "tid": 1, "ts": 1851375, "pid": 1}
+,{"name": "Populate BuildUsageTagSet", "ph": "X", "dur": 119.100000000117, "tid": 1, "ts": 1851380, "pid": 1}
+,{"name": "PostPackingCallback", "ph": "X", "dur": 0.199999999949796, "tid": 1, "ts": 1851556, "pid": 1}
+,{"name": "WriteSerializedFiles", "ph": "X", "dur": 969744.2, "tid": 1, "ts": 1851590, "pid": 1}
+,{"name": "RunCachedOperation", "ph": "X", "dur": 969737.7, "tid": 1, "ts": 1851596, "pid": 1, "args": {"0":"Total Entries: 1, Processed: 1, Cached: 0"}}
+,{"name": "Process Entries", "ph": "X", "dur": 969719.7, "tid": 1, "ts": 1851598, "pid": 1}
+,{"name": "Writing SceneBundleWriteOperation", "ph": "X", "dur": 938767.4, "tid": 1, "ts": 1851654, "pid": 1, "args": {"0":"CAB-2c166c34c6df9556db7458f176b8b56c.sharedAssets"}}
+,{"name": "Process Cached Entries", "ph": "X", "dur": 1.60000000005311, "tid": 1, "ts": 2821319, "pid": 1}
+,{"name": "ArchiveAndCompressBundles", "ph": "X", "dur": 862677.1, "tid": 1, "ts": 2821450, "pid": 1}
+,{"name": "CreateWorkItems", "ph": "X", "dur": 12.199999999666, "tid": 1, "ts": 2821454, "pid": 1}
+,{"name": "CopyingCachedFiles", "ph": "X", "dur": 0.29999999969732, "tid": 1, "ts": 2821467, "pid": 1}
+,{"name": "ArchiveItems", "ph": "X", "dur": 862591.6, "tid": 1, "ts": 2821467, "pid": 1, "args": {"0":"Archiving 1 Bundles"}}
+,{"name": "ArchiveSingleItem", "ph": "X", "dur": 862432.4, "tid": 548, "ts": 2821483, "pid": 1, "args": {"0":"ideealised-city_0"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 5874.19999999997, "tid": 548, "ts": 3678041, "pid": 1, "args": {"0":"C:\\Users\\kobya\\Documents\\GitHub\\Idealised city\\Idealised-city\\Temp\\ContentBuildData\\ideealised-city_0 -> C:\\Users\\kobya\\Documents\\GitHub\\Idealised city\\Idealised-city\\Exports\\WebGL\\ideealised-city_0"}}
+,{"name": "PostArchiveProcessing", "ph": "X", "dur": 52.599999999984, "tid": 1, "ts": 3684071, "pid": 1}
+,{"name": "AppendBundleHash", "ph": "X", "dur": 0.900000000001455, "tid": 1, "ts": 3684194, "pid": 1}
+,{"name": "GenerateLinkXml", "ph": "X", "dur": 0.199999999949796, "tid": 1, "ts": 3684208, "pid": 1}
+,{"name": "PostWritingCallback", "ph": "X", "dur": 0.0999999997475243, "tid": 1, "ts": 3684228, "pid": 1}
 ]
 }

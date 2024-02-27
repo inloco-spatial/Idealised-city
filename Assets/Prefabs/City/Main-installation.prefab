@@ -176,7 +176,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1509246596039352518}
   - component: {fileID: 533261006841069284}
-  - component: {fileID: 502831544317367740}
   - component: {fileID: 2989394264602704616}
   m_Layer: 0
   m_Name: Idelised-City-Palm (1)
@@ -256,27 +255,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00042207958, y: -0.0000000013969839, z: 0.021349238}
     m_Extent: {x: 0.014660666, y: 0.013737751, z: 0.021349238}
   m_DirtyAABB: 0
---- !u!95 &502831544317367740
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502831544317367743}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9dbcb4dd1b628e640b0598fa8b464344, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &2989394264602704616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -466,7 +444,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2318628842671390100}
   - component: {fileID: 5454341878580639500}
-  - component: {fileID: 5454341878580639501}
   - component: {fileID: 2851042985787748648}
   m_Layer: 0
   m_Name: Idelised-City-House-4
@@ -546,27 +523,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00063230516, y: -0.0004078038, z: 0.007833741}
     m_Extent: {x: 0.01340393, y: 0.023291199, z: 0.007833741}
   m_DirtyAABB: 0
---- !u!95 &5454341878580639501
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3362562157804913121}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 077627b8414d99b4290ffea7755821b2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &2851042985787748648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -590,7 +546,6 @@ GameObject:
   m_Component:
   - component: {fileID: 539839331622307431}
   - component: {fileID: 1866284890507753686}
-  - component: {fileID: 3641034525885262047}
   - component: {fileID: 6528399956476415967}
   m_Layer: 0
   m_Name: Idelised-City-House-1
@@ -670,27 +625,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0012419629, y: 0.00020990707, z: 0.006061021}
     m_Extent: {x: 0.01090432, y: 0.022999462, z: 0.006061021}
   m_DirtyAABB: 0
---- !u!95 &3641034525885262047
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3641034525885262040}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b6758371c5042ee46b490280ddc46ce9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &6528399956476415967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -797,7 +731,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6033180375621317105}
   - component: {fileID: 2765762297610108168}
-  - component: {fileID: 4027952098982574981}
   - component: {fileID: 4304792453080061387}
   m_Layer: 0
   m_Name: Idelised-City-Magic-Block
@@ -877,27 +810,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000330579, y: -0.0006441297, z: 0.0074270307}
     m_Extent: {x: 0.009572165, y: 0.009826372, z: 0.0074270307}
   m_DirtyAABB: 0
---- !u!95 &4027952098982574981
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4027952098982574982}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7ceed7c0626656846a99376d111e8c80, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &4304792453080061387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -921,7 +833,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6954506022469607167}
   - component: {fileID: 2308920494070952037}
-  - component: {fileID: 2308920494070952034}
   - component: {fileID: 6658894836464529513}
   m_Layer: 0
   m_Name: Idelised-City-House-5
@@ -1001,27 +912,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000011035241, y: 0.00016918965, z: 0.006313563}
     m_Extent: {x: 0.012350074, y: 0.02672202, z: 0.006313563}
   m_DirtyAABB: 0
---- !u!95 &2308920494070952034
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4266524439153347109}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 910b29b34751803499d4aa4fb031af5f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &6658894836464529513
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1128,7 +1018,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5165959676999437807}
   - component: {fileID: 4151273403762782255}
-  - component: {fileID: 5226950319391902534}
   - component: {fileID: 4563565383031878582}
   m_Layer: 0
   m_Name: Idelised-City-House-6
@@ -1208,27 +1097,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00060787564, y: 0.0009084465, z: 0.012627125}
     m_Extent: {x: 0.011975879, y: 0.012226786, z: 0.012627125}
   m_DirtyAABB: 0
---- !u!95 &5226950319391902534
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5226950319391902535}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e24e1071ebe32b0439e3fa8844707c79, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &4563565383031878582
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1252,7 +1120,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6800714141030713058}
   - component: {fileID: 5618118205167638720}
-  - component: {fileID: 5506631389306287000}
   - component: {fileID: 7200517535312370892}
   m_Layer: 0
   m_Name: Idelised-City-Palm
@@ -1332,27 +1199,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00042207958, y: -0.0000000013969839, z: 0.021349238}
     m_Extent: {x: 0.014660666, y: 0.013737751, z: 0.021349238}
   m_DirtyAABB: 0
---- !u!95 &5506631389306287000
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5506631389306287003}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9dbcb4dd1b628e640b0598fa8b464344, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &7200517535312370892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1614,7 +1460,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8520773913429976534}
   - component: {fileID: 5378224519782787900}
-  - component: {fileID: 8272749857698644597}
   - component: {fileID: 3555297298172371633}
   m_Layer: 0
   m_Name: Idelised-City-Screen
@@ -1694,27 +1539,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00047898293, y: 0.009891832, z: 0.025610447}
     m_Extent: {x: 0.0164259, y: 0.016661044, z: 0.025576305}
   m_DirtyAABB: 0
---- !u!95 &8272749857698644597
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8272749857698644596}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c352fe6d681a6a24a9d80f91c8b6707a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &3555297298172371633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1821,7 +1645,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4403746377229616709}
   - component: {fileID: 2453676129631445333}
-  - component: {fileID: 2453676129631445290}
   - component: {fileID: 3628229121683357438}
   m_Layer: 0
   m_Name: Idelised-City-House-3
@@ -1901,27 +1724,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008854293, y: 0.0009773923, z: 0.0059473943}
     m_Extent: {x: 0.013063068, y: 0.00970983, z: 0.0059473943}
   m_DirtyAABB: 0
---- !u!95 &2453676129631445290
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8683845824309632982}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 068665c636c8f04488fb42e10cc9a252, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &3628229121683357438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2042,7 +1844,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3948292025858293685}
   - component: {fileID: 6503249006388396906}
-  - component: {fileID: 3948292025858293684}
   - component: {fileID: 2863542526098309984}
   m_Layer: 0
   m_Name: Idelised-City-House-2
@@ -2122,27 +1923,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00045468798, y: -0.0010997937, z: 0.0055940715}
     m_Extent: {x: 0.011490922, y: 0.008918645, z: 0.0055940715}
   m_DirtyAABB: 0
---- !u!95 &3948292025858293684
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9011233230159172294}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e622c0180b58ee04cb53424b2ab5a0aa, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &2863542526098309984
 BoxCollider:
   m_ObjectHideFlags: 0
