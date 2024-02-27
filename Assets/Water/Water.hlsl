@@ -15,13 +15,21 @@ SamplerState sampler_CameraDepthTexture;
 #endif
 */
 #ifndef REQUIRE_OPAQUE_TEXTURE
+#if defined(UNITY_STEREO_INSTANCING_ENABLED) || defined(UNITY_STEREO_MULTIVIEW_ENABLED)
+Texture2DArray _CameraOpaqueTexture;
+#else
 Texture2D _CameraOpaqueTexture;
+#endif
 SamplerState sampler_CameraOpaqueTexture;
 #endif
 
 half3 SampleSceneColor(half2 uv)
 {
+#if defined(UNITY_STEREO_INSTANCING_ENABLED) || defined(UNITY_STEREO_MULTIVIEW_ENABLED)
+	return _CameraOpaqueTexture.Sample(sampler_CameraOpaqueTexture, float3(StereoTransformScreenSpaceTex(uv), unity_StereoEyeIndex)).rgb;
+#else
 	return _CameraOpaqueTexture.Sample(sampler_CameraOpaqueTexture, StereoTransformScreenSpaceTex(uv)).rgb;
+#endif
 }
 
 half4 _CameraOpaqueTexture_TexelSize;
@@ -82,7 +90,7 @@ void WaterSurf_half(half3 ViewVector, half3 ViewNormal, half3 ViewTangent, half3
 		half sharpness = 2.0;
 		half sharewaweDistortion = 0.3;
 		foamUV = foamUV + sharewaweDistortion * TangentNormal.xy;
-		half wave = _FoamTex.Sample(sampler_FoamTex, foamUV);
+		half wave = _FoamTex.Sample(sampler_FoamTex, foamUV).r;
 		half layer = _ShorelineWidth * dot(ViewNormal, viewPos - ViewVector);
 		half shoreline = saturate(1 - layer);
 		half t = shoreline - _Time.y * _Shoreline_Wave_Speed;
