@@ -214,6 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9191766752086490856}
   - component: {fileID: 6962492073349650936}
+  - component: {fileID: 5317111291733561142}
   m_Layer: 0
   m_Name: Idelised-City-House-3
   m_TagString: Untagged
@@ -292,6 +293,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008854293, y: 0.0009773923, z: 0.0059473943}
     m_Extent: {x: 0.013063068, y: 0.00970983, z: 0.0059473943}
   m_DirtyAABB: 0
+--- !u!65 &5317111291733561142
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4184335616622667643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023, y: 0.013, z: 0.011894789}
+  m_Center: {x: 0, y: 0, z: 0.005947394}
 --- !u!1 &5961932873588349868
 GameObject:
   m_ObjectHideFlags: 0

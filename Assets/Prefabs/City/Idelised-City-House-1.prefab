@@ -313,16 +313,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 19171988769790786}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Inflate
+            m_BoolArgument: 0
+          m_CallState: 2
     animatorEvent:
       events:
-      - animator: {fileID: 19171988769790786}
-        syncedAnimator: {fileID: 0}
-        parameter: Inflate
-        parameterType: 0
-        operation: 0
-        floatValue: 0
-        intValue: 0
-        boolValue: 0
       - animator: {fileID: 2559703697001895308}
         syncedAnimator: {fileID: 0}
         parameter: Pump

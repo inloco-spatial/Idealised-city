@@ -2,7 +2,7 @@ ManifestFileVersion: 1
 CompatibilityAssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: ideealised-city_0
-      Hash: 4b0d65c0ef69caf17c92a56f7ebca814
-      CRC: 1709212001
+      Name: idealised-city_0
+      Hash: 603528c02ed54eac47007ec727acc7ec
+      CRC: 617672663
       Dependencies: {}
